@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        #hypothesis testing<br>
+        xbar=9900<br>
+        muo=10000<br>
+        sigma=120<br>
+        n=30<br>
+        z=(xbar-muo)/(sigma/sqrt(n))<br>
+        print(z)<br>
+        alpha=0.05<br>
+        t.alpha=qt(1-alpha,df=n-1)<br>
+
+        print(t.alpha)<br>
+    </p>
+    <p>
+        #performe chi-square test<br>
+        library("MASS")<br>
+        car.data<-data.frame(Cars93$AirBags,Cars93$Type)<br>
+        car.data=table(Cars93$AirBags,Cars93$Type)<br>
+        print(car.data)<br>
+        print(chisq.tes(car.data))<br>
+    </p>
+</body>
+</html>
